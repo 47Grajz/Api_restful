@@ -18,3 +18,4 @@ module.exports = {
     await queryInterface.removeConstraint('Articles','article_user_association');
   }
 };
+

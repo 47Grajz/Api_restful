@@ -22,9 +22,12 @@ app.use(morgan('combined'))
 
 app.use('/api/v1/users',require('./api/v1/routes/users.routes'))
 app.use('/api/v1/articles',require('./api/v1/routes/articles.routes'))
-
+app.get('/api/v1/test',(req,res)=>
+{
+    res.send('Hello ADSO!!')
+})
 
 
 app.listen(app.get('port'),()=>{
     console.log(`Server running on localhost:${app.get('port')}`);
-})
+});

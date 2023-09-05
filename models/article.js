@@ -11,14 +11,14 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
 
-      Article.belongsTo(models.User);
-      models.User.hasMany(Article);
+      // Article.belongsTo(models.User);
+      // models.User.hasMany(Article);
 
 
-      Article.belongsToMany(models.Category,{
-        through: "articleCategories",
-        as: "categories"
-      })
+      // Article.belongsToMany(models.Category,{
+      //   through: "articleCategories",
+      //   as: "categories"
+      // })
    
 
       // define association here

@@ -14,10 +14,17 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "grajz",
+    "password": "Ce5yHoXAaI0Cl85od1ARuQpIpRN2gy9N",
+    "database": "db_api_rest_iol6",
+    "host": "oregon-postgres.render.com",
+    "dialect": "postgres",
+    "dialectOptions":
+    {
+      "ssl":{
+        "require":true,
+        "rejectUnauthorized":false
+      }
+    }
   }
 }
